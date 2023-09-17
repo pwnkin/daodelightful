@@ -44,14 +44,13 @@ To add Daodelightful to your Discord server, follow these steps:
 4. **Configuration:**
 
    - Clone or download the Daodelightful bot code to your local machine.
-   - Create a file named `.env` in the project directory.
-   - Add the following line to the `.env` file, replacing `YOUR_BOT_TOKEN` with your bot's token:
+   - Find your token for your bot.
+   - Add the following line to the `bot.py` file, replacing `Token goes here` with your bot's token:
 
      ```
-     DISCORD_TOKEN=YOUR_BOT_TOKEN
+     TOKEN = 'Token goes here'
      ```
 
-   - Save the `.env` file.
 
 5. **Run the Bot:**
 
