@@ -20,7 +20,8 @@ Daodelightful is a Discord bot that provides access to the Dao De Jing text, all
 
 To use Daodelightful, you can use the following command:
 
-- `ddj chapter {number}`: Retrieve a specific chapter from the Dao De Jing by providing its number.
+- `/about`: Print out about information for the bot.
+- `/chapter`: Retrieve a specific chapter from the Dao De Jing by providing its number.
 
 ## Setup
 
@@ -45,10 +46,10 @@ To add Daodelightful to your Discord server, follow these steps:
 
    - Clone or download the Daodelightful bot code to your local machine.
    - Find your token for your bot.
-   - Edit the following line in the `bot.py` file, replacing `Token goes here` with your bot's token:
+   - Edit the following line in the `bot.py` file, replacing `x` with your bot's token:
 
      ```
-     TOKEN = 'Token goes here'
+     TOKEN = 'x'
      ```
 
 
@@ -62,7 +63,7 @@ To add Daodelightful to your Discord server, follow these steps:
 
 After inviting Daodelightful to your server and setting it up, you can use the following command to retrieve chapters from the Dao De Jing:
 
-- To get Chapter X: `ddj chapter X`
+- To get Chapter X: `/chapter x`
 
 Replace `X` with the specific chapter number you want to access.
 
