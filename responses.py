@@ -1,5 +1,4 @@
-import os
-
+# Reponse Handler for bot.py
 def hasnum(s):
     return any(i.isdigit() for i in s)
 
