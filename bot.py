@@ -24,5 +24,5 @@ def rundiscbot():
     @client.event
     async def on_ready():
         await tree.sync()
-        print("Bot is up!")
+        print("\33[32mBot is up!\033[0m")
     client.run(TOKEN)
