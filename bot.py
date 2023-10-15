@@ -17,12 +17,17 @@ def rundiscbot():
         await interaction.response.send_message("""Hello, I'm Daodelightful! I'm a Dao De Jing quotation bot created by viridianskies! You can use the /chapter command with the chapter number you want!""")
 
     @tree.command(name = "chapter", description = "Prints requested Daodejing chapter")
-    async def chapterreq(interaction, chapter: int):
-        response = responses.hanresp(int(chapter))
+    async def chapterreq(interaction, chapter: int, translation: str):
+        response = responses.hanresp(int(chapter), translation)
         await interaction.response.send_message(response)
+    
+    @tree.command(name = "translations", description = "Lists the current available translations.")
+    async def translist(interaction):
+        await interaction.response.send_message("""Available translations:\n- (sm) - Stephen Mitchell\n- (gia) - Gia-Fu Feng\n- (wtc) - Wing-Tsit Chan""")
     
     @client.event
     async def on_ready():
         await tree.sync()
         print("\33[32mBot is up!\033[0m")
     client.run(TOKEN)
+    
