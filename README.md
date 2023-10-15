@@ -22,6 +22,7 @@ To use Daodelightful, you can use the following command:
 
 - `/about`: Print out about information for the bot.
 - `/chapter`: Retrieve a specific chapter from the Dao De Jing by providing its number.
+- `/translation`: Print out a list of available translations.
 
 ## Setup
 
@@ -57,15 +58,15 @@ To add Daodelightful to your Discord server, follow these steps:
 
    - Make sure you have Python 3.7 or higher installed.
    - Install the required dependencies by running `pip install discord.py` in your terminal.
-   - Run the bot by executing `python bot.py` (or the filename of your bot script).
+   - Run the bot by executing `python main.py` (or the filename of your bot script).
 
 ## Usage
 
 After inviting Daodelightful to your server and setting it up, you can use the following command to retrieve chapters from the Dao De Jing:
 
-- To get Chapter X: `/chapter x`
+- To get Chapter X: `/chapter number translation`
 
-Replace `X` with the specific chapter number you want to access.
+Replace `number` with the specific chapter number you want to access, and `translation` with the translation code you want.
 
 ## Contributing
 
