@@ -1,5 +1,20 @@
-# Daodelightful Discord Bot
-# Prints out quotations from the Dao De Jing!
+# Daodelightful Discord Bot, Prints out quotations from the Dao De Jing!
+"""
+Copyright (C) 2023-2023 pwnkin and contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
 
 
 # imports
@@ -17,7 +32,7 @@ def rundiscbot():
 
     @tree.command(name="about", description="About info for daodelightful")
     async def about(interaction):
-        await interaction.response.send_message("""Hello, I'm Daodelightful! I'm a Dao De Jing quotation bot created by viridianskies! You can use the /chapter command with the chapter number you want!""")  # noqa
+        await interaction.response.send_message("""Hello, I'm Daodelightful! I'm a Dao De Jing quotation bot created by pwnkin! You can use the /chapter command with the chapter number you want!""")  # noqa
 
     @tree.command(name="chapter", description="Prints requested chapter")
     async def chapterreq(interaction, chapter: int, translation: str):

@@ -2,6 +2,17 @@
 
 Daodelightful is a Discord bot that provides access to the Dao De Jing text, allowing users to retrieve chapters and verses from this ancient Chinese philosophical text. This README guide will help you get started with Daodelightful.
 
+## Translations Attribution
+
+All of the text within [/translations/](https://codeberg.org/pwnkin/Daodelightful/src/branch/main/translations) is owned by 
+the respective owners and is not my work.:
+
+- Gia-Fu Feng & Jane English
+- Stephen Mitchell
+- Wing Tsit Chan
+
+These translations are used with permission or under the terms specified by the respective licenses provided by the original authors. Please refer to the individual translation files for specific details on licensing and usage.
+
 ## Table of Contents
 
 - [Features](#features)
@@ -74,4 +85,4 @@ If you'd like to contribute to Daodelightful, feel free to fork the repository, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE](LICENSE) file for details.

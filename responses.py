@@ -1,11 +1,27 @@
 # Reponse Handler for bot.py
+"""
+Copyright (C) 2023-2023 pwnkin and contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
 
 def hasnum(s):
     """Checks if the string contains a number"""
     return any(i.isdigit() for i in s)
 
 
-availtrans = {
+availtrans = { # available translations
     "sm": "Stephen Mitchell",
     "gia": "Gia-Fu Feng",
     "wtc": "Wing-Tsit Chan",
@@ -31,16 +47,16 @@ def parse(num: int, trans):
     global txt
     req = "daodelightful/translations/{}ddj.txt".format(trans) # noqa
     try:
-        with open(req, 'r') as file:
+        with open(req, 'r') as file: # open .txt file(s)
             txt = file.readlines()
 
-    except FileNotFoundError:
+    except FileNotFoundError: # return error if the requested translation is not valid
         validtrans = False
         global errormsg
         errormsg = "Translation {} is not a valid translation.".format(trans)
         return errormsg
 
-    res = []
+    res = [] # function for finding and appending the proper text to be sent to user
     for line in txt:
         if hasnum(line):
             chap = ""
