@@ -4,7 +4,7 @@ Daodelightful is a Discord bot that provides access to the Dao De Jing text, all
 
 ## Translations Attribution
 
-All of the text within [/translations/](https://codeberg.org/pwnkin/Daodelightful/src/branch/main/translations) is owned by 
+All of the text within [/translations/](https://github.com/pwnkin/daodelightful/tree/main/translations) is owned by 
 the respective owners and is not my work.:
 
 - Gia-Fu Feng & Jane English
